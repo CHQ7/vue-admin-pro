@@ -85,7 +85,7 @@ pnpm build
 
 ## 更新日志
 
-[CHANGELOG](./CHANGELOG.zh_CN.md)
+[CHANGELOG](./CHANGELOG.md)
 
 ## 如何贡献
 

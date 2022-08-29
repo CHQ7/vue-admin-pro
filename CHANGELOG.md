@@ -3,228 +3,228 @@
 ### 🐞 Bug fixes
 
 - `process` is not defined in path
-- Fixed an error when dynamic routing `children` is an empty array
-- Fixed `iframe` loading failure
+- 修复动态路由`children`为空数组时报错
+- 修复`iframe`加载失败
 
 # 3.4.5 (2022-8-22)
 
 ### 🐞 Bug fixes
 
-- Fix local responsive storage object setting issue
+- 修复本地响应式存储对象设置问题
 
 # 3.4.0 (2022-8-22)
 
 ### 🍏 Perf
 
-- Optimized routing
-- Optimized for mobile compatibility
-- Optimized routing parameters (`query`, `params` way to refresh the page does not need to open the tab page cache, the parameters can be retained on the `url` and `tab page`)
+- 优化路由
+- 优化移动端兼容性
+- 优化路由传参（`query`、`params` 方式刷新页面不需要再开启标签页缓存也能保留参数在`url`和`标签页`上）
 
 # 3.3.5 (2022-8-19)
 
 ### 🎫 Feat
 
-- Secondary encapsulation of `Table` of `element-plus` into [@pureadmin/table](https://github.com/xiaoxian521/pure-admin-table), providing flexible configuration items and integrating into the platform
-- Secondary encapsulation of `Descriptions` of `element-plus` into [@pureadmin/descriptions](https://github.com/xiaoxian521/pure-admin-descriptions), providing flexible configuration items and integrating into the platform
-- Centralize most of the tools and hooks of the platform to [@pureadmin/utils](https://pure-admin-utils-docs.vercel.app/), and delete the code concentrated in this library to reduce the size of the platform
-- Add [unplugin-vue-define-options](https://www.npmjs.com/package/unplugin-vue-define-options) plugin, the page can directly write `defineOptions({name: custom name})`
-- Add project files, language analysis tool [cloc](https://www.npmjs.com/package/cloc)
-- Added landing page internationalization
-- Add full routing configuration table type declaration
-- Add virtual listing page demo
-- Add `PDF` preview page demo
-- Added export `execl` page demo
-- Added blank page demo without `Layout`
+- 将 `element-plus` 的 `Table` 二次封装到[@pureadmin/table](https://github.com/xiaoxian521/pure-admin-table)，提供灵活的配置项并集成到平台里
+- 将 `element-plus` 的 `Descriptions` 二次封装到[@pureadmin/descriptions](https://github.com/xiaoxian521/pure-admin-descriptions)，提供灵活的配置项并集成到平台里
+- 将平台的大部分工具以及 hooks 都集中到[@pureadmin/utils](https://pure-admin-utils-docs.vercel.app/)，并删除集中到这个库里的代码，减少平台体积
+- 添加[unplugin-vue-define-options](https://www.npmjs.com/package/unplugin-vue-define-options)插件，页面可直接写 `defineOptions({name: 自定义名称})`
+- 添加项目文件、语言分析工具 [cloc](https://www.npmjs.com/package/cloc)
+- 添加登陆页国际化
+- 添加完整路由配置表类型声明
+- 添加虚拟列表页面 demo
+- 添加 `PDF` 预览页面 demo
+- 添加导出 `execl` 页面 demo
+- 添加无 `Layout` 的空白页面 demo
 
 ### ✔️ refactor
 
-- Refactored the theme color to adapt to `element-plus` dark mode (also solved the problem that the same element `css` in `3.3.0` and earlier versions was overwritten many times, resulting in poor style debugging)
-- Refactored route reset function
+- 重构主题色，适配 `element-plus` 暗黑模式（同时也解决了 `3.3.0` 及更低版本中同样的元素 `css` 被多次覆盖，导致样式不好调试的问题）
+- 重构路由重置功能
 
 ### 🍏 Perf
 
-- The compatible project storage directory is named in Chinese, but we really do not recommend Chinese naming, because a library may not escape the Chinese path, causing the project to crash
-- Optimized interface type
+- 兼容项目存放目录以中文命名，但我们真心不推荐中文命名，因为可能某个库没有对中文路径做转义处理，导致项目奔溃
+- 优化接口类型
 
 ### 🐞 Bug fixes
 
-- Fixed async routes with `showlink` set to `false`, not showing after refresh
-- Fixed vertical navigation menu text being hidden after collapse when there is no `icon`
+- 修复路由 `showlink` 为 `false` 的异步路由，刷新后不显示
+- 修复当没有 `icon` 时，垂直导航菜单折叠后文字被隐藏
 
 # 3.3.0 (2022-5-11)
 
 ### 🎫 Feat
 
-- Add user management page demo
-- Add role management page demo
-- Add department management page demo
-- Add card list page demo
-- Integrated form designer
-- Added `PPT` demo
-- Added anti-shake interception demo in the function menu
-- Upgrade `wangeditorV5` (and support internationalization and custom themes)
-- Integrate `tauri` version
-- Added barcode function
-- Added QR code function
-- Use the `Cascader` cascade selector in `element-plus` to write a three-level and two-level linkage demo of Chinese provinces and cities
-- Integrate `Swiper` plugin
-- Routing supports passing `component`, representing the component path
-- Added pre-release packaging mode
-- Add [hooks] to close a tag (https://github.com/xiaoxian521/vue-pure-admin/commit/5e8723a031923e79f507e5a17151d3bd88a51523)
+- 添加用户管理页面 demo
+- 添加角色管理页面 demo
+- 添加部门管理页面 demo
+- 添加卡片列表页面 demo
+- 集成表单设计器
+- 新增`PPT`demo
+- 在功能菜单中新增防抖截流 demo
+- 升级`wangeditorV5`（并支持国际化和自定义主题）
+- 集成`tauri`版本
+- 新增条形码功能
+- 新增二维码功能
+- 使用`element-plus`中的`Cascader`级联选择器编写中国省市区三级、二级联动 demo
+- 集成`Swiper`插件
+- 路由支持传`component`，代表组件路径
+- 添加预发布打包模式
+- 添加关闭某个标签的[hooks](https://github.com/xiaoxian521/vue-pure-admin/commit/5e8723a031923e79f507e5a17151d3bd88a51523)
 
 ### ✔️ refactor
 
-- Refactored the landing page to be more inclined to the actual business scenario
-- Use `unocss` instead of `windicss`, `unocss` has better performance in development environment, no memory leaks, and `api` is compatible with `windicss`
+- 重构登录页，更偏向实际业务场景
+- 使用`unocss`替换`windicss`，`unocss`开发环境下性能更好，没有内存泄露，而且`api`使用上兼容`windicss`
 
 ### 🍏 Perf
 
-- Optimized the style of the `split-pane` component for the platform
-- Optimize internationalization, no longer pass the `i18n` field in the route, the platform automatically reads the files in the `locales` folder of the root directory for internationalization matching
-- Optimized icon selector
-- Optimize `layout` to display user information [commit](https://github.com/xiaoxian521/vue-pure-admin/commit/56f9dc85e7fbe0637605c43577c794de9f8968aa)
+- 优化平台的`split-pane`组件样式
+- 优化国际化，路由不再传`i18n`字段，平台自动读取根目录`locales`文件夹下文件进行国际化匹配
+- 优化图标选择器
+- 优化`layout`显示用户信息[commit](https://github.com/xiaoxian521/vue-pure-admin/commit/56f9dc85e7fbe0637605c43577c794de9f8968aa)
 
 ### 🐞 Bug fixes
 
-- Fix route initialization problem (Cannot access 'constantRoutes' before initialization)
+- 修复路由初始化问题（Cannot access 'constantRoutes' before initialization）
 
 # 3.2.0 (2022-3-22)
 
 ### 🎫 Feat
 
-- Icon selection component
-- Menu search function
-- Added results page
-- Extended `element-plus` timeline component
-- Extended `element-plus` tree component to support connecting lines
-- Add tree selector, support single and multiple selection
+- 图标选择组件
+- 菜单搜索功能
+- 添加结果页面
+- 扩展`element-plus`时间线组件
+- 扩展`element-plus`树组件，支持连接线
+- 添加树形选择器，支持单选和多选
 
 ### 🍏 Perf
 
-- Optimized the error page UI
-- Optimize the internationalization function
-- Optimized routing `rank` sorting, compatible with the case where the value of the `rank` field in the routing `meta` is `null`
+- 优化错误页面 UI
+- 优化国际化功能
+- 优化路由`rank`排序，兼容路由`meta`中`rank`字段值为`null`的情况
 
 ### 🐞 Bug fixes
 
-- Fixed the situation where the menu expands and folds will freeze on some computers
+- 修复菜单展开折叠在部分电脑出现卡顿的情况
 
 # 3.1.0 (2022-3-3)
 
 ### 🎫 Feat
 
-- iframe supports dynamic loading
-- Watermark example
-- Print examples (pictures, tables, echarts)
-- Add running and packaging information, use `lodash-unified` to replace `lodash-es`, `lodash-unified` supports `ESM` and is compatible with `CJS`
+- iframe 支持动态加载
+- 水印示例
+- 打印示例（图片、表格、echarts）
+- 添加运行、打包信息, 使用`lodash-unified`替换`lodash-es`,`lodash-unified`支持`ESM`同时兼容`CJS`
 
 ### 🐞 Bug fixes
 
-- Fixed jumping to another menu page alone in one menu page, the routing page jumped but the tab page was not displayed
-- Fixed the route that returns dynamic level 3 and above in the background, and the menu does not correspond to the page
+- 修复在一个菜单页面内单独跳转到另一个菜单页面，路由页面跳转了但是标签页不显示的情况
+- 修复后台返回动态三级及以上的路由，出现菜单与页面不对应的情况
 
 # 3.0 (2022-2-14)
 
 ### 🎫 Feat
 
-- Added mix navigation
+- 添加混合导航
 
 ### 🐞 Bug fixes
 
-- Fix tab page bug
+- 修复标签页 bug
 
-# 2.9.0 (2022-2-5)
+# 2.9.0(2022-2-5)
 
 ### 🎫 Feat
 
-- Added package size analysis, command `pnpm report`
+- 添加打包大小分析，命令`pnpm report`
 
 ### 🍏 Perf
 
-- Use `iconify` to introduce icons on demand, optimize icon size, and reduce network requests
-- Optimize the route, the route can not pass `showLink: true`, it is displayed by default
+- 采用`iconify`按需引入图标，优化图标大小，减少网络请求
+- 优化路由，路由可不传`showLink: true`，默认显示
 
-# 2.8.5 (2022-1-21)
+# 2.8.5(2022-1-21)
 
 ### 🎫 Feat
 
-- Added `WindiCSS` support
-- Add online environment remove console plugin `vite-plugin-remove-console`
+- 添加 `WindiCSS` 支持
+- 添加线上环境删 console 插件`vite-plugin-remove-console`
 
 ### ✔️ refactor
 
-- Replace `@element-plus/icons-vue` with `@iconify-icons/ep`
+- 使用`@iconify-icons/ep`替换`@element-plus/icons-vue`
 
 # 2.8.0(2022-1-4)
 
 ### 🎫 Feat
 
--Added dark theme
--Add element-plus custom theme
--Add guide page
+- 添加暗黑主题
+- 添加 element-plus 自定义主题
+- 添加引导页
 
 ### 🍏 Perf
 
--Optimize internationalization, compatible with the vscode plug-in i18n Ally smart reminder
--Optimize the back-end return routing structure
--Optimize local storage, with four built-in buttons `responsive-configure`, `responsive-locale`, `responsive-layout`, `responsive-tags`, which are basic configuration, international configuration, layout configuration, and tab persistent configuration
+- 优化国际化，兼容 vscode 插件 i18n Ally 智能提醒
+- 优化后端返回路由结构
+- 优化本地存储，内置四个键`responsive-configure`、`responsive-locale`、`responsive-layout`、`responsive-tags`，分别为基本配置、国际化配置、布局配置、标签页持久化配置
 
 # 2.7.0(2021-12-18)
 
 ### 🎫 Feat
 
-- New tab reuse
-- New message reminder template
-- Added front-end menu tree structure example
-- Refactor routing, optimize permissions modules, and bring a more convenient experience
-- Refactor the env environment and http request to bring a more convenient experience
-- Currently, the tabs of the platform are forced to associate with local storage. The next step is to put the tabs in the memory by default and support configurable persistent tabs
-- Navigation menu icons support fontawesome, iconfont, remixicon, element-plus/icons, custom svg
-- Update font-awesome to version 5.0, because versions below 5.0 are no longer officially maintained, but the platform will still be compatible with font-awesome4 version
+- 新增标签页复用
+- 新增消息提醒模版
+- 新增前端菜单树结构例子
+- 重构路由，优化权限模块，带来更方便的体验
+- 重构 env 环境和 http 请求，带来更方便的体验
+- 目前平台的标签页强制关联了本地存储，下一步标签页默认放到内存中并支持可配置持久化标签页
+- 导航菜单图标支持 fontawesome、iconfont、remixicon、element-plus/icons、自定义 svg
+- 更新 font-awesome 到 5.0 版本，因为 5.0 以下的版本官方不再维护，但平台依旧会兼容 font-awesome4 版本
 
 ### 🍏 Perf
 
-- Optimize the tab page to bring a better interactive experience
-- Routing title supports direct writing in Chinese, which can be separated from internationalization
-- Route history mode is read from env and supports base parameter
-- Packaged files provide traditional browser compatibility support, configure VITE_LEGACY to true
+- 优化标签页，带来更好的交互体验
+- 路由 title 支持直接写中文，可脱离国际化
+- 路由历史模式从 env 读取并支持 base 参数
+- 打包后的文件提供传统浏览器兼容性支持，配置 VITE_LEGACY 为 true
 
 # 2.6.0(2021-11-10)
 
 ### 🎫 Feat
 
-- Refactored navigation theme color, supports multiple color schemes
-- Refactored login page, illustration style
+- 重构导航主题色，支持多种配色
+- 重构登录页，插画风格
 
 ### 🍏 Perf
 
-- Optimize the navigation style
-- Eliminate strong navigation dependence on vxe-table
-- Synchronously update element-plus, replace Font Icon with SVG Icon
+- 优化导航样式
+- 剔除导航强依赖 vxe-table
+- 同步更新 element-plus，使用 SVG Icon 替换 Font Icon
 
 # 2.1.0(2021-10-14)
 
 ### 🎫 Feat
 
-- Route animation (each route can add different animations)
-- Extra icons (for example, this is a newly added page, a new icon is displayed in the upper right corner of the routing menu)
-- Extract the default configuration options
-- Perfect type file
+- 路由动画（每个路由都可添加不同动画）
+- 额外图标（比如这个是新加的页面，路由菜单右上角显示个新图标）
+- 抽离默认配置选项
+- 完善类型文件
 
 ### 🐞 Bug fixes
 
-- Fix the issue of element-plus internationalization
-- Fix routing issues
-- Fix navigation adaptation problem
+- 修复 element-plus 国际化使用问题
+- 修复路由问题
+- 修复导航适配问题
 
 # 2.0.1(2021-9-29)
 
 ### 🎫 Feat
 
-- Feat horizontal nav
+- 添加 horizontal 水平模式导航
 
 # 2.0.0(2021-4-13)
 
 ### 🎫 Chores
 
-- Release 2.0.0 version
+- 发布 2.0.0 版本
