@@ -1,6 +1,6 @@
 {
-  "name": "vue-pure-admin",
-  "version": "3.4.6",
+  "name": "vue-admin-pro",
+  "version": "3.0.0",
   "private": true,
   "scripts": {
     "dev": "cross-env --max_old_space_size=4096 vite",

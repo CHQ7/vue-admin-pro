@@ -19,8 +19,8 @@ export function viteBuildInfo(): Plugin {
         bold(
           green(
             `👏欢迎使用${blue(
-              "[vue-pure-admin]"
-            )}，如果您感觉不错，记得点击后面链接给个star哦💖 https://github.com/xiaoxian521/vue-pure-admin`
+              "[vue-admin-pro]"
+            )}，如果您感觉不错，记得点击后面链接给个star哦💖 https://github.com/CHQ7/vue-admin-pro.git`
           )
         )
       );

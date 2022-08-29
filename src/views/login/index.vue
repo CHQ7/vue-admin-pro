@@ -76,10 +76,6 @@ const onLogin = async (formEl: FormInstance | undefined) => {
   });
 };
 
-function onHandle(value) {
-  useUserStoreHook().SET_CURRENTPAGE(value);
-}
-
 watch(imgCode, value => {
   useUserStoreHook().SET_VERIFYCODE(value);
 });
@@ -202,18 +198,6 @@ dataThemeChange();
 
             <Motion :delay="250">
               <el-form-item>
-                <div class="w-full h-20px flex justify-between items-center">
-                  <el-checkbox v-model="checked">
-                    {{ t("login.remember") }}
-                  </el-checkbox>
-                  <el-button
-                    link
-                    type="primary"
-                    @click="useUserStoreHook().SET_CURRENTPAGE(4)"
-                  >
-                    {{ t("login.forget") }}
-                  </el-button>
-                </div>
                 <el-button
                   class="w-full mt-4"
                   size="default"
@@ -226,51 +210,8 @@ dataThemeChange();
               </el-form-item>
             </Motion>
 
-            <Motion :delay="300">
-              <el-form-item>
-                <div class="w-full h-20px flex justify-between items-center">
-                  <el-button
-                    v-for="(item, index) in operates"
-                    :key="index"
-                    class="w-full mt-4"
-                    size="default"
-                    @click="onHandle(index + 1)"
-                  >
-                    {{ t(item.title) }}
-                  </el-button>
-                </div>
-              </el-form-item>
-            </Motion>
           </el-form>
 
-          <Motion v-if="currentPage === 0" :delay="350">
-            <el-form-item>
-              <el-divider>
-                <p class="text-gray-500 text-xs">{{ t("login.thirdLogin") }}</p>
-              </el-divider>
-              <div class="w-full flex justify-evenly">
-                <span
-                  v-for="(item, index) in thirdParty"
-                  :key="index"
-                  :title="t(item.title)"
-                >
-                  <IconifyIconOnline
-                    :icon="`ri:${item.icon}-fill`"
-                    width="20"
-                    class="cursor-pointer text-gray-500 hover:text-blue-400"
-                  />
-                </span>
-              </div>
-            </el-form-item>
-          </Motion>
-          <!-- 手机号登录 -->
-          <phone v-if="currentPage === 1" />
-          <!-- 二维码登录 -->
-          <qrCode v-if="currentPage === 2" />
-          <!-- 注册 -->
-          <regist v-if="currentPage === 3" />
-          <!-- 忘记密码 -->
-          <update v-if="currentPage === 4" />
         </div>
       </div>
     </div>
