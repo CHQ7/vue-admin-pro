@@ -1,16 +1,26 @@
-node_modules
+# --------------------------------------
+# Git 上传忽略规则
+# --------------------------------------
 .DS_Store
+node_modules
 dist
 dist-ssr
 *.local
 .eslintcache
 report.html
 
+# Log file
 yarn.lock
+package-lock.json
 npm-debug.log*
+.yarn-error.log*
+.yarn-debug.log*
 .pnpm-error.log*
-.pnpm-debug.log
+.pnpm-debug.log*
+
+# tests file
 tests/**/coverage/
+tests/e2e/reports
 
 # Editor directories and files
 .idea

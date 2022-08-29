@@ -1,3 +1,7 @@
+// --------------------------------------
+// unocss 规则
+// --------------------------------------
+
 import { defineConfig, presetUno } from "unocss";
 
 // https://github.com/unocss/unocss#readme

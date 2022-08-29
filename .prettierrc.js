@@ -1,3 +1,7 @@
+// --------------------------------------
+// Prettier 规则
+// --------------------------------------
+
 module.exports = {
   bracketSpacing: true,
   singleQuote: false,

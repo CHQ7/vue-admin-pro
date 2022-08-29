@@ -1,3 +1,8 @@
+// *---------------------------------------------------------
+// >> vite 配置 https://vitejs.cn/
+// >> desc:前端开发与构建工具
+// *---------------------------------------------------------
+
 import dayjs from "dayjs";
 import { resolve } from "path";
 import pkg from "./package.json";

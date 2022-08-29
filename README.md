@@ -1,11 +1,5 @@
 <h1>vue-pure-admin</h1>
 
-![GitHub license](https://img.shields.io/github/license/xiaoxian521/vue-pure-admin?style=flat)
-![GitHub stars](https://img.shields.io/github/stars/xiaoxian521/vue-pure-admin?color=fa6470&style=flat)
-![GitHub forks](https://img.shields.io/github/forks/xiaoxian521/vue-pure-admin?style=flat)
-
-**中文** | [English](./README.en-US.md)
-
 ## 简介
 
 vue-pure-admin 是一个免费开源的中后台模版。使用了最新的`vue3` `vite2` `Element-Plus` `TypeScript`等主流技术开发，开箱即用的中后台前端解决方案，也可用于学习参考。
@@ -22,10 +16,6 @@ vue-pure-admin 是一个免费开源的中后台模版。使用了最新的`vue3
 ## 精简版
 
 - [点我查看精简版](https://github.com/xiaoxian521/pure-admin-thin)
-
-## Tauri 版
-
-- [点我查看 Tauri 版](https://github.com/xiaoxian521/tauri-pure-admin)
 
 ## 预览
 
@@ -46,50 +36,38 @@ vue-pure-admin 是一个免费开源的中后台模版。使用了最新的`vue3
   <img alt="PureAdmin Logo" width="100%" src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3061c7b92f6d4cb4bcdf227d966ac696~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?">
 </p>
 
-### 使用 Gitpod
-
-在 Gitpod（适用于 GitHub 的免费在线开发环境）中打开项目，并立即开始编码.
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/xiaoxian521/vue-pure-admin)
-
 ## 安装使用
 
 - 获取项目代码
 
 ```bash
-git clone https://github.com/xiaoxian521/vue-pure-admin.git
-or
-git clone https://gitee.com/yiming_chang/vue-pure-admin.git
+git clone https://github.com/CHQ7/vue-admin-pro.git
 ```
 
 - 安装依赖
 
 ```bash
-cd vue-pure-admin
+cd vue-admin-pro
 
-pnpm install
+npm install
 
 ```
 
 - 运行
 
 ```bash
-pnpm serve
+npm serve
 ```
 
 - 打包
 
 ```bash
-pnpm build
+npm build
 ```
-
-## 更新日志
-
-[CHANGELOG](./CHANGELOG.md)
 
 ## 如何贡献
 
-非常欢迎你的加入！[提一个 Issue](https://github.com/xiaoxian521/vue-pure-admin/issues/new/choose) 或者提交一个 Pull Request
+非常欢迎你的加入！[提一个 Issue](https://github.com/CHQ7/vue-admin-pro/issues) 或者提交一个 Pull Request
 
 **Pull Request:**
 
@@ -126,41 +104,3 @@ pnpm build
 | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt=" Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>IE | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt=" Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Safari |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |                                                                                             not support                                                                                              |                                                                                            last 2 versions                                                                                             |                                                                                                  last 2 versions                                                                                                  |                                                                                                last 2 versions                                                                                                |                                                                                                last 2 versions                                                                                                |
-
-## 维护者
-
-[xiaoxian521](https://github.com/xiaoxian521)、[Ten-K](https://github.com/Ten-K)
-
-## 捐赠
-
-如果你觉得这个项目对您有帮助，可以帮作者买一杯果汁 🍹 表示支持
-
-<img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f69bf13c5b854ed5b699807cafa0e3ce~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp?" width="150px" height="150px" />
-
-## QQ 交流群
-
-一群已满，下面是二群，群里严禁`黄`、`赌`、`毒`、`vpn`等违法行为！
-
-<img src="https://pure-admin-doc.vercel.app/img/support/qq.png" width="150px" height="225px" />
-
-## 许可证
-
-原则上不收取任何费用及版权，可以放心使用，不过如需二次开源（比如用此平台二次开发并开源）请联系作者获取许可！
-
-[MIT © xiaoxian521-2020](./LICENSE)
-
-## 捐赠者
-
-非常感谢你们的支持，相信项目会越来越好 :heart:
-
-|                                                                xueyuheng                                                                 |                                                                taolei1990                                                                 |                                                                hang-kim                                                                 |                                                               madwolfcrazy                                                                |                                                                limuen                                                                 |                                                                BenLakes                                                                 |
-| :--------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------: |
-| <a href="https://github.com/xueyuheng"><img src="https://avatars.githubusercontent.com/u/48202935?v=4" width="60px" height="60px" /></a> | <a href="https://github.com/taolei1990"><img src="https://avatars.githubusercontent.com/u/23173640?v=4" width="60px" height="60px" /></a> | <a href="https://github.com/hang-kim"><img src="https://avatars.githubusercontent.com/u/52914259?v=4" width="60px" height="60px" /></a> | <a href="https://github.com/madwolfcrazy"><img src="https://avatars.githubusercontent.com/u/223671?v=4" width="60px" height="60px" /></a> | <a href="https://github.com/limuen"><img src="https://avatars.githubusercontent.com/u/31790606?v=4" width="60px" height="60px" /></a> | <a href="https://github.com/BenLakes"><img src="https://avatars.githubusercontent.com/u/15206046?v=4" width="60px" height="60px" /></a> |
-|                                                                mollerzhu                                                                 |                                                                  TLovers                                                                  |                                                                  cnyyk                                                                  |                                                                                                                                           |                                                                                                                                       |                                                                                                                                         |
-| <a href="https://github.com/mollerzhu"><img src="https://avatars.githubusercontent.com/u/49627902?v=4" width="60px" height="60px" /></a> |  <a href="https://github.com/TLovers"><img src="https://avatars.githubusercontent.com/u/26561694?v=4" width="60px" height="60px" /></a>   |   <a href="https://github.com/cnyyk"><img src="https://avatars.githubusercontent.com/u/275233?v=4" width="60px" height="60px" /></a>    |                                                                                                                                           |                                                                                                                                       |                                                                                                                                         |
-
-## 贡献者
-
-这个项目的存在感谢所有做出贡献的人 :heart:
-
-<a href="https://github.com/xiaoxian521/vue-pure-admin/graphs/contributors"><img src="https://contrib.rocks/image?repo=xiaoxian521/vue-pure-admin" /></a>

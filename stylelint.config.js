@@ -1,3 +1,7 @@
+// --------------------------------------
+// stylelint 规则
+// --------------------------------------
+
 module.exports = {
   root: true,
   plugins: ["stylelint-order"],

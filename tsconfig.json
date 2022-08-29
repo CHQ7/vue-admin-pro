@@ -1,3 +1,8 @@
+// *---------------------------------------------------------
+// >> TypeScript 配置 https://github.com/microsoft/TypeScript
+// >> desc:CSS 预处理工具
+// *---------------------------------------------------------
+
 {
   "compilerOptions": {
     "target": "esnext",

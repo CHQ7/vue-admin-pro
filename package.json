@@ -4,23 +4,22 @@
   "private": true,
   "scripts": {
     "dev": "cross-env --max_old_space_size=4096 vite",
-    "serve": "pnpm dev",
+    "serve": "npm dev",
     "build": "rimraf dist && cross-env NODE_OPTIONS=--max-old-space-size=8192 vite build",
     "build:staging": "rimraf dist && cross-env vite build --mode staging",
     "report": "rimraf dist && cross-env vite build",
     "preview": "vite preview",
-    "preview:build": "pnpm build && vite preview",
+    "preview:build": "npm build && vite preview",
     "typecheck": "tsc --noEmit && vue-tsc --noEmit --skipLibCheck",
     "cloc": "cross-env --max_old_space_size=4096 cloc . --exclude-dir=node_modules --exclude-lang=YAML",
-    "clean:cache": "rm -rf node_modules && rm -rf .eslintcache && pnpm install",
+    "clean:cache": "rm -rf node_modules && rm -rf .eslintcache && npm install",
     "lint:eslint": "eslint --cache --max-warnings 0  \"{src,mock}/**/*.{vue,ts,tsx}\" --fix",
     "lint:prettier": "prettier --write  \"src/**/*.{js,json,tsx,css,less,scss,vue,html,md}\"",
     "lint:stylelint": "stylelint --cache --fix \"**/*.{vue,css,scss,postcss,less}\" --cache --cache-location node_modules/.cache/stylelint/",
     "lint:lint-staged": "lint-staged -c ./.husky/lintstagedrc.js",
     "lint:pretty": "pretty-quick --staged",
-    "lint": "pnpm lint:eslint && pnpm lint:prettier && pnpm lint:stylelint",
-    "prepare": "husky install",
-    "preinstall": "npx only-allow pnpm"
+    "lint": "npm lint:eslint && npm lint:prettier && npm lint:stylelint",
+    "prepare": "husky install"
   },
   "browserslist": [
     "> 1%",
@@ -152,15 +151,6 @@
     "vite-svg-loader": "^3.4.0",
     "vue-eslint-parser": "^8.2.0",
     "vue-tsc": "^0.40.1"
-  },
-  "pnpm": {
-    "peerDependencyRules": {
-      "ignoreMissing": [
-        "rollup",
-        "terser",
-        "webpack"
-      ]
-    }
   },
   "repository": "git@github.com:xiaoxian521/vue-pure-admin.git",
   "author": "xiaoxian521",
