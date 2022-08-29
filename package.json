@@ -144,7 +144,7 @@
     "vue-eslint-parser": "^8.2.0",
     "vue-tsc": "^0.40.1"
   },
-  "repository": "git@github.com:xiaoxian521/vue-pure-admin.git",
-  "author": "xiaoxian521",
+  "repository": "git@github.com:CHQ7/vue-admin-pro.git",
+  "author": "CHQ7",
   "license": "MIT"
 }
